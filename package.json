@@ -1,46 +1,16 @@
 {
-  "name": "shopify-development-drawer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "shopify-development-toolbar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "copy-assets": "cpx \"./src/**/*.css\" ./dist",
-    "watch-assets": "cpx \"./src/**/*.css\" ./dist --watch",
-    "start": "concurrently --kill-others \"npm run watch-assets\" \"npm run serve\" \"npm run watch-babel\"",
-    "serve": "webpack serve --mode=development --open",
-    "watch-babel": "babel src -d dist --watch",
-    "build-babel": "babel src -d dist",
-    "build-webpack": "webpack --config webpack.config.js",
-    "build": "npm run copy-assets && npm run build-babel && npm run build-webpack --mode=production"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mikemooredev/shopify-development-drawer.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mikemooredev/shopify-development-drawer/issues"
-  },
-  "homepage": "https://github.com/mikemooredev/shopify-development-drawer#readme",
   "devDependencies": {
-    "@babel/cli": "^7.20.7",
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-transform-react-jsx": "^7.20.13",
-    "@babel/preset-env": "^7.20.2",
-    "babel-loader": "^9.1.2",
-    "concurrently": "^7.6.0",
-    "css-loader": "^6.7.3",
-    "html-webpack-plugin": "^5.5.0",
-    "mini-css-extract-plugin": "^2.7.2",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
-  },
-  "dependencies": {
-    "babel-plugin-transform-import-css-l7": "^0.0.6",
-    "cpx": "^1.5.0",
-    "style-loader": "^3.3.1"
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "svelte": "^3.55.1",
+    "vite": "^4.1.0"
   }
 }
