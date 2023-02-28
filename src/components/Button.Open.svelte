@@ -1,5 +1,5 @@
 <script>
-  import { dispatch } from '../utils.js'
+  import { dispatch } from '../lib/events.js'
   import Button from './Button.svelte'
 
   const handleClick = event => dispatch(event?.target, 'sdd:open')

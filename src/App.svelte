@@ -1,9 +1,9 @@
 <script>
-  import { listen } from './utils.js'
+  import { listen } from './lib/events.js'
   import { onMount } from 'svelte'
 
-  import Drawer from './lib/Drawer.svelte'
-  import Button_Open from './lib/Button.Open.svelte'
+  import Drawer from './components/Drawer.svelte'
+  import Button_Open from './components/Button.Open.svelte'
 
   let mainEl
   let hideDrawer = false

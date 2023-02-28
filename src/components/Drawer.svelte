@@ -2,22 +2,16 @@
   export let hideDrawer = false
 
   import Header from './Header.svelte'
-  import ListItem from './ListItem.svelte'
-  import Button from './Button.svelte'
+  import ShopLinks from './ShopLinks.svelte'
+  import ResourceLinks from './ResourceLinks.svelte'
+  import ObjectLinks from './ObjectLinks.svelte'
 </script>
 
 <aside class="sdd-Drawer" aria-hidden={hideDrawer}>
   <Header />
-
-  <ul>
-    <ListItem href={""}>Item 1</ListItem>
-    <ListItem href={""}>Item 1</ListItem>
-    <ListItem href={""}>Item 1</ListItem>
-  </ul>
-
-  <Button>Click 11</Button>
-  <Button>Click 12</Button>
-  <Button>Click 13</Button>
+  <ShopLinks />
+  <ResourceLinks />
+  <ObjectLinks />
 </aside>
 
 <style>
