@@ -12,7 +12,7 @@
   /* Colour */
   --colour-background: #cccccc;
   --colour-foreground: #333333;
-  --color-foreground--interaction: #000000;
+  --colour-foreground--interaction: #000000;
   --colour-border: #aaaaaa;
 
   --filter: invert(0) grayscale(0) brightness(0);
@@ -30,7 +30,7 @@
    /* Colour */
   --colour-background: #333333;
   --colour-foreground: #cccccc;
-  --color-foreground--interaction: #ffffff;
+  --colour-foreground--interaction: #ffffff;
   --colour-border: #454545;
 
   --filter: invert(1) grayscale(100%) brightness(200%);

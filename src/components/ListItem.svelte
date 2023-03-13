@@ -24,6 +24,6 @@
   }
 
   a:is(:hover,:focus) {
-    color: var(--color-foreground--interaction);
+    color: var(--colour-foreground--interaction);
   }
 </style>

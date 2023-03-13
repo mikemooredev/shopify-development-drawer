@@ -1,0 +1,24 @@
+{
+  "version": "0.01",
+  "manifest_version": 3,
+  "name": "Shopify Development Drawer",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*"
+      ],
+      "js": [
+        "content-scripts/assets/js/shopify-development-drawer.js"
+      ],
+      "css": []
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
