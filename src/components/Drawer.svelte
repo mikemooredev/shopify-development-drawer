@@ -16,6 +16,7 @@
 
 <style>
   .sdd-Drawer {
+    background-color: var(--colour-background);
     border-inline-end: 1px solid #000;
     height: 100vh;
     width: min(400px, 100%);
@@ -24,6 +25,10 @@
     top:0;
     bottom:0;
     left:0;
+
+    overflow: auto;
+
+    padding: 0 var(--spacing);
   }
 
   .sdd-Drawer[aria-hidden="true"] {

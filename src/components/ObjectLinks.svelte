@@ -1,4 +1,5 @@
 <script>
+  import List from './List.svelte'
   import ListItem from './ListItem.svelte'
 
   const liquidObjects = {
@@ -13,8 +14,8 @@
   }
 </script>
 
-<ul>
+<List>
   {#each Object.keys(liquidObjects) as key}
     <ListItem href={`https://shopify.dev/docs/api/liquid/objects/${key}`} target="_blank">{liquidObjects[key]}</ListItem>
   {/each}
-</ul>
+</List>

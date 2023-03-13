@@ -23,3 +23,12 @@
     Open
   </Button_Open>
 </main>
+
+<style>
+main {
+  display: block;
+  position: relative;
+  isolation: isolate;
+  z-index: var(z-index);
+}
+</style>

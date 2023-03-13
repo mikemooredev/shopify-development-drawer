@@ -3,10 +3,27 @@
   export let target = ''
 </script>
 
-<li>
-  <a href={href} target={target}>
-    <slot />
-  </a>
+{#if href}
+  <li>
+    <a href={href} target={target}>
+      <slot />
+    </a>
 
-  <slot name="sub-list" />
-</li>
+    <slot name="sub-list" />
+  </li>
+{/if}
+
+<style>
+  a {
+    display: block;
+    color: var(--colour-foreground);
+
+    padding: var(--spacing-half) 0;
+
+    text-decoration: none;
+  }
+
+  a:is(:hover,:focus) {
+    color: var(--color-foreground--interaction);
+  }
+</style>

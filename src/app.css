@@ -8,12 +8,35 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  /* Colour */
+  --colour-background: #cccccc;
+  --colour-foreground: #333333;
+  --color-foreground--interaction: #000000;
+  --colour-border: #aaaaaa;
+
+  --filter: invert(0) grayscale(0) brightness(0);
+
+  /* Layout */
+  --spacing: 16px;
+  --spacing-half: calc(var(--spacing) / 2);
+  --spacing-double: calc(var(--spacing) * 2);
+
+  --z-index: 99999;
 }
 
-.sdd-Button {
-  border: none;
-  border-radius: 8px;
+@media (prefers-color-scheme: dark) {
+ :root {
+   /* Colour */
+  --colour-background: #333333;
+  --colour-foreground: #cccccc;
+  --color-foreground--interaction: #ffffff;
+  --colour-border: #454545;
 
-  background-color: #957DAD;
-  color: #fff;
+  --filter: invert(1) grayscale(100%) brightness(200%);
+ }
+}
+
+* {
+  box-sizing: border-box;
 }
