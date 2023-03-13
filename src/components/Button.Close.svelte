@@ -5,7 +5,9 @@
   const handleClick = event => dispatch(event?.target, 'sdd:close')
 </script>
 
-<Button className="sdd-Button_Close" onClick={handleClick} ariaLabel="Close"></Button>
+<Button className="sdd-Button_Close" onClick={handleClick} ariaLabel="Close">
+  <slot />
+</Button>
 
 <style>
   :global(.sdd-Button_Close) {

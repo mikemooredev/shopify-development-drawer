@@ -25,10 +25,10 @@
 </main>
 
 <style>
-main {
-  display: block;
-  position: relative;
-  isolation: isolate;
-  z-index: var(z-index);
-}
+  main {
+    display: block;
+    position: relative;
+    isolation: isolate;
+    z-index: var(z-index);
+  }
 </style>

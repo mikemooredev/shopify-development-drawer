@@ -3,7 +3,7 @@
 </script>
 
 <header class="sdd-Header">
-  <Button_Close>Close</Button_Close>
+  <Button_Close />
 </header>
 
 <style>
